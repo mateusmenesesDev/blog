@@ -25,12 +25,14 @@ export default function LastPostCard({
         <Image
           src={image}
           alt={imageAlt}
-          className="h-[150px] w-full object-cover lg:h-full"
+          className="h-[150px] w-full object-cover lg:h-full lg:max-h-[350px]"
         />
       </div>
       <div className="flex flex-1 flex-col">
-        <div>
-          <span className="text-xs font-bold text-gray-500">{category}</span>
+        <div className="mt-2">
+          <span className="mr-2 text-xs font-bold text-gray-500">
+            {category}
+          </span>
           <span className="text-xs text-gray-500">{date}</span>
         </div>
         <h2 className="my-2 text-xl font-bold lg:text-2xl">{title}</h2>
